@@ -1,27 +1,7 @@
-﻿Index Values,Daily AQI Color,Level of Concern,"2015 Ozone Breakpoints (ppb, 8-hour avg)",24-Hour PM2.5 Levels (μg/m3),PM2.5 Health Effects,Precautionary Actions,,
-0-50,Green,Good,0-54,0-12.0,Little to no risk.,None.,,
-51-100,Yellow,Moderate,55-70,12.1-35.4,Unusually sensitive individuals may experience respiratory symptoms.,Unusually sensitive people should consider reducing prolonged or heavy exertion.,,
-101-150,Orange,Unhealthy for Sensitive Groups ,71-85,35.5-55.4,"Increasing likelihood of respiratory symptoms in sensitive individuals, aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly.","People with respiratory or heart disease, the elderly and children should limit prolonged exertion.",,
-151-200,Red,Unhealthy,86-105,55.5-150.4,Increased aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly; increased respiratory effects in general population.,"People with respiratory or heart disease, the elderly and children should avoid prolonged exertion; everyone else should limit prolonged exertion.",,
-201-300,Purple,Very Unhealthy,106-200,150.5-250.4,Significant aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly; significant increase in respiratory effects in general population.,"People with respiratory or heart disease, the elderly and children should avoid any outdoor activity; everyone else should avoid prolonged exertion.",,
-301-500,Maroon,Hazardous,201-600,250.5-500.4,Serious aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly; serious risk of respiratory effects in general population.,"Everyone should avoid any outdoor exertion; people with respiratory or heart disease, the elderly and children should remain indoors.",,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,AQI,AQI
-,,,,,,,Ilow - Ihigh,Category
-,,,,,,,0-50,Good
-,,,,,,,51-100,Moderate
-,,,,,,,101-150,Unhealthy for Sensitive Groups
-,,,,,,,151-200,Unhealthy
-,,,,,,,201–300,Very Unhealthy
-,,,,,,,301-400,Hazardous
-,,,,,,,401-500,
+﻿Index Values,Level of Concern,Daily AQI Color,"2015 Ozone Breakpoints (ppb, 8-hour avg)",24-Hour PM2.5 Levels (μg/m3),Precautionary Actions,PM2.5 Health Effects
+0-50,Good,Green,0-54,0-12.0,None.,Little to no risk.
+51-100,Moderate,Yellow,55-70,12.1-35.4,Unusually sensitive people should consider reducing prolonged or heavy exertion.,Unusually sensitive individuals may experience respiratory symptoms.
+101-150,Unhealthy for Sensitive Groups ,Orange,71-85,35.5-55.4,"People with respiratory or heart disease, the elderly and children should limit prolonged exertion.","Increasing likelihood of respiratory symptoms in sensitive individuals, aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly."
+151-200,Unhealthy,Red,86-105,55.5-150.4,"People with respiratory or heart disease, the elderly and children should avoid prolonged exertion; everyone else should limit prolonged exertion.",Increased aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly; increased respiratory effects in general population.
+201-300,Very Unhealthy,Purple,106-200,150.5-250.4,"People with respiratory or heart disease, the elderly and children should avoid any outdoor activity; everyone else should avoid prolonged exertion.",Significant aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly; significant increase in respiratory effects in general population.
+301-500,Hazardous,Maroon,201-600,250.5-500.4,"Everyone should avoid any outdoor exertion; people with respiratory or heart disease, the elderly and children should remain indoors.",Serious aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly; serious risk of respiratory effects in general population.
