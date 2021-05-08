@@ -16,7 +16,7 @@ Please cite use of these data and images.California Energy Commission (2021). Ca
 </br></br>
 
 
-### U.S. Department of Health & Human Services
+### U.S. DHS / CDC
 
 - https://catalog.data.gov/dataset?res_format=CSV&res_format=JSON&organization=hhs-gov&sort=score+desc%2C+name+asc&q=air+quality&_res_format_limit=0&_organization_limit=0
 
