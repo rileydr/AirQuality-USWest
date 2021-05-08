@@ -4,6 +4,12 @@
 git_ignore/
 
 
+##### macOS #####
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
 
 ##### JupyterNotebooks #####
