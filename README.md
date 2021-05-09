@@ -24,7 +24,7 @@ We are taking a regression problem and looking to predict, what carbon emissions
 
 ## Team
 
-Veronica Antonova (CA)
+Veronica Antonova (CA) [LI](linkedin.com/in/vstepanova)
 
 Riley Robertson (WA)
 
