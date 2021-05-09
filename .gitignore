@@ -3,6 +3,10 @@
 # local repo file storage
 git_ignore/
 
+# hm scratch folders
+scratch/
+scratch_data/
+
 
 ##### macOS #####
 
