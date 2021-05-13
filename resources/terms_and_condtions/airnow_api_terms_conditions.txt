@@ -1,0 +1,26 @@
+U.S. Environmental Protection Agency (EPA) AirNow Data Use Guidelines
+
+The EPA AirNow Data Use Guidelines apply to data available from the AirNow program, which includes these data portals: AirNow.gov, AirNow-Tech, and the AirNow API. The purpose of the guidelines is to make all interested parties aware of the nature and objective of real-time air quality information.
+
+- AirNow observational data are not fully verified or validated; these data are subject to change and should be considered preliminary. Data and information reported to AirNow from federal, state, local, and tribal agencies are provided for the express purpose of reporting and forecasting the Air Quality Index (AQI). As such, they should not be used to formulate or support regulation, ascertain trends, act as guidance, or support any other government or public decision-making. Official regulatory air quality data must be obtained from EPA's Air Quality System (AQS).
+
+- Only validated data should be used for reports and data analysis whenever possible. AirNow data are raw data and should never be substituted for validated data stored in the AQS archive.
+
+- Credit should first be given to the appropriate source - federal, state, local, and tribal air quality agencies and the EPA AirNow program - in products, publications, presentations, or any other related distribution. These federal, state, local, and tribal air quality agencies are the owners of the data and the authorities for the data. A list of state/local/tribal agencies can be found at http://www.airnow.gov/index.cfm?action=airnow.partnerslist.
+
+- Air quality data, forecast values, and advisory statements should not be altered in any way and should be disseminated as received.
+
+- Federal, state, local, and tribal air quality agencies are the authority for issuing air quality forecasts and advisories. Forecasts, advisories, advisory names, and notifications should not be altered in any way.
+
+- Air quality observed and forecast values should be disseminated in accordance with the AQI and corresponding RGB colors as directed in the Technical Assistance Document for the Reporting of Daily Air Quality â€“ the Air Quality Index (AQI), available at https://www3.epa.gov/airnow/aqi-technical-assistance-document-may2016.pdf
+
+- All end-users who receive these data should be provided with the most current data available, in particular, advisories issued by federal, state, local, and tribal air quality agencies. The AirNow program updates all data feeds several times per hour.
+
+- If observational data are used for analyses, displayed on web pages, or used for other programs or products, the analysis results, displays, or products must indicate that these data are preliminary.
+
+- That publications, analyses, products, and/or derived information rely on these data must be made known to the relevant federal, state, local, and tribal air quality agencies and the EPA AirNow program.
+
+- Data users' contact information must be kept current for the purposes of informing users of these data about any program or product updates and/or problems.
+
+- Questions about AirNow data, forecasts, and advisories should be directed to dmc@airnowtech.org and white.johne@epa.gov.
+
