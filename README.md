@@ -1,16 +1,11 @@
-# A World With 0 Emissions
+# Wildfires and Air Quality
 
-Imagine a world with no emissions. Is this even in the realm of possibility? And what does data science have to do with it?
-
-Well, we dared to imagine.
-
-We took data on coastal wilfires, air quality, EV production and current carbon footprint to analyze and understand the trend. Using modeling, we attempt to understand the relationship between these inputs and their weight on emissions.
+This is currently a work in progress and we'll be updating it in the coming weeks.
 
 - - -
 
 ## Problem Space
 
-We are taking a regression problem and looking to predict, what carbon emissions might look like some years into the future.
 
 
 ## Team
