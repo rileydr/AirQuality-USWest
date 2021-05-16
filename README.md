@@ -2,16 +2,18 @@
 
 This is currently a work in progress and we'll be updating it in the coming weeks.
 
-- - -
-
-## Problem
-
-
-<div style='float:center'>
-<img src='./assets/orange_sky_sf.png' width=500 alt='a photo from the Millenium Tower in San Francisco when the city was covered by smoke from California wildfires')
-</div>
 
 </br></br>
+## Problem
+</br>
+
+<p align=center>
+<img src="./assets/orange_sky_sf.png" width=500 alt="San Francisco covered in smoke from California wildfires" title="San Francisco covered in smoke from California wildfires">
+</p>
+
+
+</br>
+
 ## Team
 
 Veronica Antonova (CA) [LinkedIn](http://linkedin.com/in/vstepanova) | [GitHub](https://github.com/cotica)
