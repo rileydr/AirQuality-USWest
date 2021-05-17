@@ -25,20 +25,20 @@ Riley Robertson (WA) [LinkedIn](https://www.linkedin.com/in/riley-d-robertson/) 
 
 All data cover the period of 2012 or later.
 
-* [Fire Data](https://frap.fire.ca.gov/frap-projects/fire-perimeters/)
-* [Pollution data - from the EPA via Kaggle.com](https://www.kaggle.com/sogun3/uspollution)
-* [Air Quality](https://docs.airnowapi.org/files)
+* [`Fire Data`](https://frap.fire.ca.gov/frap-projects/fire-perimeters/)
+* [`Pollution data`](https://www.kaggle.com/sogun3/uspollution)
+* [`Air Quality`](https://docs.airnowapi.org/files)
 <!---* [CA EV purchases]()--->
 
 </br></br>
 
 ## Important terminology
 
-* AQI refers to the air quality index and is measured from Good (Green) to Hazardous (Purple).
+* `AQI` refers to the air quality index and is measured from Good (Green) to Hazardous (Purple).
 
-* NO2 refers to ozone emission.
+* `NO2` refers to ozone emission.
 
-* A prescribed fire is a planned fire.
+* A `prescribed fire` is a planned fire.
 
 
 ## Data acquisition and wrangling
@@ -85,12 +85,14 @@ Many factors influence air quality (_[source](https://docs.google.com/document/d
 
 </br></br>
 ## Python Notebooks and Presentation Links
+
+* [`EDA`](./code/va-EDA.ipynb)
 <!---
 * [Main notebook report with findings]()
 * [Scraping notebook]()
 * [Modeling notebook]()
-* [Slides](https://docs.google.com/presentation/d/10I3ZuSoi1APt5GTSe4lJPC51fLsKmMWfKAVmRrd-5NY/edit#slide=id.p) 
 --->
+* [`Slides`](https://docs.google.com/presentation/d/10I3ZuSoi1APt5GTSe4lJPC51fLsKmMWfKAVmRrd-5NY/edit#slide=id.p)
 
 <!---
 <div style='float: center; padding=50px'>
