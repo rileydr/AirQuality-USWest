@@ -3,7 +3,7 @@
 ## Problem
 </br>
 
-Our research seeks to understand the relationship between wildfires and their impact on air quality. Namely, we are looking to identify whether a strong relationship exists between those factors, analyzing individual variables including NO2, AQI and others.
+This project seeks to use pre-exisitng data to understand the relationship between wildfires and air quality by analyzing individual pollutants their respective AQIs. Maybe even PM2.5. Who knows it's not due til Friday.
 
 <p align=center>
 <img src="./assets/orange_sky_sf.png" width=500 alt="San Francisco covered in smoke from California wildfires" title="San Francisco covered in smoke from California wildfires">
@@ -23,31 +23,34 @@ Riley Robertson (WA) [LinkedIn](https://www.linkedin.com/in/riley-d-robertson/) 
 </br></br>
 ## Data sources
 
-All data cover the period of 2012 or later.
+Many of these data span decades, but our timeframe of focus for this project is 2010-2017.
 
-* [`Fire Data`](https://frap.fire.ca.gov/frap-projects/fire-perimeters/)
-* [`Pollution data`](https://www.kaggle.com/sogun3/uspollution)
-* [`Air Quality`](https://docs.airnowapi.org/files)
+* [Fire Data](https://www.mtbs.gov/direct-download)
+* [Smoke exposure estimates from satellite imagery](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CTWGWE)
+* [Air pollutant data sourced from the EPA (preprocessed by BrendaSo, made available at kaggle.com)](https://www.kaggle.com/sogun3/uspollution)
+* [Air Quality](https://docs.airnowapi.org/files)
 <!---* [CA EV purchases]()--->
 
 </br></br>
 
 ## Important terminology
 
-* `AQI` refers to the air quality index and is measured from Good (Green) to Hazardous (Purple).
+* AQI: air quality index; measured from Good (Green) to Hazardous (Purple).
 
-* `NO2` refers to ozone emission.
+* Prescribed fire: abbreviated 'rx'; a planned fire executed by Tribal, Federal, State, and county agencies to meet management objectives.  Rx fires are used to benefit natural resource management, get rid of excessive fuel loads before they become a bonafide wildfires, and research.
 
-* A `prescribed fire` is a planned fire.
+* Wildfire: an uncontrolled burn, originating in wildlands or rural areas (ie not a car burning on a Gotham street corner)
+
+* Smoke score: a classification of light, medium, or heavy corresponding to the density of smoke coverage derived from NOAA's Hazard Mapping Systems satellite imaging (<=5%, 16%, and 27%+, respectively)
 
 
 ## Data acquisition and wrangling
 
-Data were scraped from the air quality site. Additional data were acquired from a researcher in Berkeley as well as several Kaggle datasets.
+Air quality data were scraped from the public API of the EPA's AirNow program 
+Fire data were obtained from [MTBS](https://www.mtbs.gov/), "a multiagency program designed to consistently map the burn severity and perimeters of (U.S.) fires" from 1984 to present.  These fire records were combined with panelized time series summation of satellite images denoting smoke coverage down to sub-county level.
 
-All data were cleaned, scaled as appropriate and merged for processing and modeling.
 
-Nulls were imputed where necessary.
+All data were cleaned and merged for processing and modeling.
 
 
 </br></br>
@@ -56,6 +59,9 @@ Nulls were imputed where necessary.
 We have sought to understand some the following:
 
 * Is there a direct relationship between AQI and fires?
+
+* Does the type of fire (rx vs. wildfire) and/or area of burn have predictable impacts on air quality in surrounding areas?
+    * if so, how long does it take for air quality to return to baseline, or at healthy 'levels of concern', as defined by the EPA?
 
 * What fire trends can be observed over the years?
 
@@ -71,7 +77,7 @@ _Insert map of fires here_
 
 * 94% of all fires are wildfires (rest are prescribed)
 * California dominates both wildfire frequency and the pollution charts
-* The vast majority (70%) of fires have a smoke score of just 1
+* The vast majority (70%) of fires have a smoke score of 'light'
 ![](./assets/fires_by_score.jpg)
 * There seems to be no relationship between the smoke score and the acreage of fire's impact (burn)
 * The most massive fires, by burn acreage, in our dataset are in 2012 and 2013
@@ -80,7 +86,8 @@ _Insert map of fires here_
 </br></br>
 ## Recommendations and conclusions
 
-Many factors influence air quality (_[source](https://docs.google.com/document/d/11ob6Qt6jiWdM_G-ge4UOWN0kTx-5hHZep2QBnOp1yjY/edit?usp=sharing)_). We sought to analyze a few of these, seeking to understand the relationship between what we predicted to be the strongest factors. In doing so, we acknowledge that we have left off many potential influencers on this equation, including but not limited to atmospheric conditions (wind patterns, presence of a drought), geographic topography, climate changes, and even behavioral changes (including adoption of electric vehicles and their eventual impact on the reduction of emissions). It would be ambitious to study all these factors in a short time frame, but this project could benefit from future iterations that can include these analyses.
+Many factors influence air quality (_[source](https://docs.google.com/document/d/11ob6Qt6jiWdM_G-ge4UOWN0kTx-5hHZep2QBnOp1yjY/edit?usp=sharing)_). Any many unexplored features determine the intensity and impact of wildfires, such as local and global climate patterns, and vegetation type and density.  This analysis seeks to determine if wildfire type and size alone can be used to estimate air quality in nearby regions.  Fire will always happen, and this process will always release greenhouse gases and other pollutants that degrade air quality.  If the relationship between fire type, size, and air pollution is predictable, this could be extrapolated to inform an optimal controlled burn regimen that minimizes detrimental impacts on air quality and human health.  
+
 
 
 </br></br>
