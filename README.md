@@ -3,7 +3,7 @@
 ## Problem
 </br>
 
-Our reseach seeks to understand the relationship between wildfires and their impact on air quality. Namely, we are looking to identify whether a strong relationship exists between those factors, analyzing individual variables including NO2, AQI and others.
+Our research seeks to understand the relationship between wildfires and their impact on air quality. Namely, we are looking to identify whether a strong relationship exists between those factors, analyzing individual variables including NO2, AQI and others.
 
 <p align=center>
 <img src="./assets/orange_sky_sf.png" width=500 alt="San Francisco covered in smoke from California wildfires" title="San Francisco covered in smoke from California wildfires">
@@ -64,10 +64,18 @@ We have sought to understand some the following:
 
 _Insert map of fires here_
 
-## Modeling techiniques
+## Modeling techniques
 
 </br></br>
 ## Key findings
+
+* 94% of all fires are wildfires (rest are prescribed)
+* California dominates both wildfire frequency and the pollution charts
+* The vast majority (70%) of fires have a smoke score of just 1
+![](./assets/fires_by_score.jpg)
+* There seems to be no relationship between the smoke score and the acreage of fire's impact (burn)
+* The most massive fires, by burn acreage, in our dataset are in 2012 and 2013
+![](./assets/fire_by_acreage.jpg)
 
 </br></br>
 ## Recommendations and conclusions
