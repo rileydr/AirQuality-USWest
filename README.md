@@ -25,10 +25,10 @@ Riley Robertson (WA) [LinkedIn](https://www.linkedin.com/in/riley-d-robertson/) 
 
 Many of these data span decades, but our timeframe of focus for this project is 2010-2017.
 
-* [Fire Data](https://www.mtbs.gov/direct-download)
-* [Smoke exposure estimates from satellite imagery](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CTWGWE)
-* [Air pollutant data sourced from the EPA (preprocessed by BrendaSo, made available at kaggle.com)](https://www.kaggle.com/sogun3/uspollution)
-* [Air Quality](https://docs.airnowapi.org/files)
+* [`Fire Data`](https://www.mtbs.gov/direct-download)
+* [`Smoke exposure estimates from satellite imagery`](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CTWGWE)
+* [`Air pollutant data sourced from the EPA (preprocessed by BrendaSo, made available at kaggle.com)`](https://www.kaggle.com/sogun3/uspollution)
+* [`Air Quality`](https://docs.airnowapi.org/files)
 <!---* [CA EV purchases]()--->
 
 </br></br>
@@ -68,7 +68,9 @@ We have sought to understand some the following:
 * Is there a cyclical relationship we can identify between smoke, fire and air quality?
  
 
-_Insert map of fires here_
+Map of fires by incident type:
+
+![](./assets/Tableau_fire_map.png)
 
 ## Modeling techniques
 
