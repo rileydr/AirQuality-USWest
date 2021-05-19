@@ -3,7 +3,12 @@
 ## Problem
 </br>
 
-This project seeks to use pre-exisitng data to understand the relationship between wildfires and air quality by analyzing individual pollutants their respective AQIs. Maybe even PM2.5. Who knows it's not due til Friday.
+This project seeks to use pre-existing data to understand the relationship between wildfires and air quality by analyzing individual pollutants their respective AQIs. Based on our learnings, we would like to be able to provide Fire Management with specific guidance.
+
+
+![Map of fires by incident type](./assets/Tableau_fire_map.png)
+
+[Animation](https://drive.google.com/file/d/1MWZd6geIZfosC4_0ReyLyio-6OQ5f0dS/view?usp=sharing)
 
 <p align=center>
 <img src="./assets/orange_sky_sf.png" width=500 alt="San Francisco covered in smoke from California wildfires" title="San Francisco covered in smoke from California wildfires">
@@ -67,12 +72,6 @@ We have sought to understand some the following:
 * Is there a cyclical relationship we can identify between smoke, fire and air quality? And if so, can we identify and interpret any seasonal patterns?
  
 
-Map of fires by incident type:
-
-![](./assets/Tableau_fire_map.png)
-
-[Animation](https://drive.google.com/file/d/1MWZd6geIZfosC4_0ReyLyio-6OQ5f0dS/view?usp=sharing)
-
 <!---<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>--->
 
 
@@ -103,6 +102,10 @@ Map of fires by incident type:
    * `burnbndlon` and `lon_smo` (burn and smoke longitude)
 
 ![](./assets/pairplot.png)
+
+* We can further see relationships between the individual components of the AQI:
+
+![](./assets/heatmap.png)
 
 
 </br></br>
