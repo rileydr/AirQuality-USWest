@@ -79,6 +79,8 @@ We have sought to understand some the following:
 
 `Duration` and `quality_scores` were engineered.
 
+K-Means were used to cluster the variables.
+
 
 </br></br>
 ## Key findings
