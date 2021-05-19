@@ -28,8 +28,8 @@ Many of these data span decades, but our timeframe of focus for this project is 
 * [`Fire Data`](https://www.mtbs.gov/direct-download)
 * [`Smoke exposure estimates from satellite imagery`](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CTWGWE)
 * [`Air pollutant data sourced from the EPA (preprocessed by BrendaSo, made available at kaggle.com)`](https://www.kaggle.com/sogun3/uspollution)
-* [`Air Quality`](https://docs.airnowapi.org/files)
-<!---* [CA EV purchases]()--->
+<!---* [`Air Quality`](https://docs.airnowapi.org/files)
+[CA EV purchases]()--->
 
 </br></br>
 
@@ -46,7 +46,6 @@ Many of these data span decades, but our timeframe of focus for this project is 
 
 ## Data acquisition and wrangling
 
-Air quality data were scraped from the public API of the EPA's AirNow program 
 Fire data were obtained from [MTBS](https://www.mtbs.gov/), "a multiagency program designed to consistently map the burn severity and perimeters of (U.S.) fires" from 1984 to present.  These fire records were combined with panelized time series summation of satellite images denoting smoke coverage down to sub-county level.
 
 
@@ -65,14 +64,22 @@ We have sought to understand some the following:
 
 * What fire trends can be observed over the years?
 
-* Is there a cyclical relationship we can identify between smoke, fire and air quality?
+* Is there a cyclical relationship we can identify between smoke, fire and air quality? And if so, can we identify and interpret any seasonal patterns?
  
 
 Map of fires by incident type:
 
 ![](./assets/Tableau_fire_map.png)
 
+[Animation](https://drive.google.com/file/d/1MWZd6geIZfosC4_0ReyLyio-6OQ5f0dS/view?usp=sharing)
+
+<!---<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>--->
+
+
 ## Modeling techniques
+
+`Duration` and `quality_scores` were engineered.
+
 
 </br></br>
 ## Key findings
@@ -80,10 +87,23 @@ Map of fires by incident type:
 * 94% of all fires are wildfires (rest are prescribed)
 * California dominates both wildfire frequency and the pollution charts
 * The vast majority (70%) of fires have a smoke score of 'light'
+
 ![](./assets/fires_by_score.jpg)
 * There seems to be no relationship between the smoke score and the acreage of fire's impact (burn)
 * The most massive fires, by burn acreage, in our dataset are in 2012 and 2013
 ![](./assets/fire_by_acreage.jpg)
+
+* There is a strong seasonal pattern from the hottest summer to fall months:
+
+![](./assets/fire_peak.png) ![](./assets/fire_season.png)
+
+* Some relationships can be detected among the following:
+   * `no2_max_ppb` and `co_max_ppm`
+   * `burnbndlat` and `lat_smo` (burn and smoke latitude)
+   * `burnbndlon` and `lon_smo` (burn and smoke longitude)
+
+![](./assets/pairplot.png)
+
 
 </br></br>
 ## Recommendations and conclusions
@@ -98,8 +118,9 @@ Many factors influence air quality (_[source](https://docs.google.com/document/d
 * [`EDA`](./code/va-EDA.ipynb)
 <!---
 * [Main notebook report with findings]()
-* [Scraping notebook]()
-* [Modeling notebook]()
+* [`Scraping` notebook]()
+* [`Modeling` notebook]()
+* [`Cleaning` notebook]
 --->
 * [`Slides`](https://docs.google.com/presentation/d/10I3ZuSoi1APt5GTSe4lJPC51fLsKmMWfKAVmRrd-5NY/edit#slide=id.p)
 
