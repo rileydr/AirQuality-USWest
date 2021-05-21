@@ -128,7 +128,7 @@ Many factors influence air quality (_[source](https://docs.google.com/document/d
 * [`Cleaning` notebook]
 --->
 * [`Slides`](https://docs.google.com/presentation/d/10I3ZuSoi1APt5GTSe4lJPC51fLsKmMWfKAVmRrd-5NY/edit#slide=id.p)
-
+* [`Tableau interactive demo`](https://public.tableau.com/profile/riley.robertson#!/vizhome/wildfires_v2/FireAcreageOverTime2010-2016)
 <!---
 <div style='float: center; padding=50px'>
 <img src='https://github.com/rileydr/AirQuality-USWest/blob/main/assets/repository_banner_dark.png'>
