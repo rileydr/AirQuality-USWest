@@ -223,7 +223,7 @@ Many factors influence air quality (_[source](https://docs.google.com/document/d
 
 **Python Notebooks**
 
-* [`Data Collection`]()
+* [`Data Collection`](https://github.com/rileydr/AirQuality-USWest/blob/main/code/rr_notebooks/epa_pm_data.ipynb)
 * [`Cleaning`](https://github.com/rileydr/AirQuality-USWest/blob/main/code/hm_notebooks/1_cleaning_smoke.ipynb)
 * [`Merging`](https://github.com/rileydr/AirQuality-USWest/blob/main/code/hm_notebooks/2_merging_smoke_fires.ipynb)
 * [`EDA`](./code/va-EDA.ipynb)
@@ -234,6 +234,7 @@ Many factors influence air quality (_[source](https://docs.google.com/document/d
 **Presentation Slide Deck**
 
 * [`Slides`](https://docs.google.com/presentation/d/10I3ZuSoi1APt5GTSe4lJPC51fLsKmMWfKAVmRrd-5NY/edit#slide=id.p)
+* [`Recording`]()
 
 </br>
 
