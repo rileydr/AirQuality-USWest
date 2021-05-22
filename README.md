@@ -34,13 +34,13 @@ Many of these data span decades, but our timeframe of focus for this project was
 1. [`Fire data from MTBS`](https://www.mtbs.gov/direct-download), 1984-2020: fire perimeters and ignition points for all U.S. fires from 1984 to present.  Accompanying metrics include acreage burned and various descriptors like type of fire (rx vs prescribed) and incident name.  Later discovered to only record fires >1000 accres in the Western U.S. (>500 in the East).
 
 
-3. [`Smoke exposure estimates from Harvard Dataverse`](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CTWGWE), 2000-2019: preprocessed by Jason Vargo to summarize NOAA Hazard-Mapping System satellite images into geocoded smoke-coverage classes (low, med, high).
+2. [`Smoke exposure estimates from Harvard Dataverse`](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CTWGWE), 2000-2019: preprocessed by Jason Vargo to summarize NOAA Hazard-Mapping System satellite images into geocoded smoke-coverage classes (low, med, high).
 
 
-4. [`Air pollutant data sourced from the EPA`](https://www.kaggle.com/sogun3/uspollution), 2000-2016:  Concentrations of 4 wildfire-related air pollutants, recording almost-daily from Air Quality Index (AQI) sensors stationed throughout the country. Preprocessed by BrendaSo, made available at kaggle.com
+3. [`Air pollutant data sourced from the EPA`](https://www.kaggle.com/sogun3/uspollution), 2000-2016:  Concentrations of 4 wildfire-related air pollutants, recording almost-daily from Air Quality Index (AQI) sensors stationed throughout the country. Preprocessed by BrendaSo, made available at kaggle.com
 
 
-5. Annual fire statistics from [NIFC](https://www.nifc.gov/fire-information/statistics), 2010-2016: yearly totals by State and by fire management agency. No information on individual events, just cumulative acreage and counts per rx and wildfire.
+4. Annual fire statistics from [NIFC](https://www.nifc.gov/fire-information/statistics), 2010-2016: yearly totals by State and by fire management agency. No information on individual events, just cumulative acreage and counts per rx and wildfire.
 
 
 NOTE: Due to the large size of our files, we offloaded our data from the repo to [Google Drive](https://drive.google.com/drive/folders/13RhI8Oj8_XZyFXaePJdo3034PLamHzvn).
@@ -70,10 +70,11 @@ Fire data were obtained from [MTBS](https://www.mtbs.gov/), "a multiagency progr
 * The kaggle pollution data was the limiting piece for time range, thus all data were trimmed to 2010-2016.
 * We selected States to the west of the Rockies as our region of focus; the idea being that State lines are arbitrary in determining where fire and air are moving, but the Rockies serve as a true barrier for both.  Only States _fully_ west of the range were included, not those that overlapped (CA, AZ, NV, UT, ID, OR, WA).  
 
-All datasets were cleaned to merge on state, county name, and dates (2000-2016).  This involved geocoding counties from the lat/lon coordinates of the fire ignition points.  Latitude and longitude were also reverse geocoded from the addresses of the AQI sensors to use for customized clustering, and because many rural wildfires originated in locations that could not be mapped to a specific county (wildlands).
+The first three datasets were cleaned to merge on state, county name, and dates (2000-2016): [smoke + fire data](https://github.com/rileydr/AirQuality-USWest/blob/main/code/hm_notebooks/2_merging_smoke_fires.ipynb), then [adding pollution data](https://github.com/rileydr/AirQuality-USWest/blob/main/code/hm_notebooks/3_merging_kaggle_pollution.ipynb).  This involved geocoding counties from the lat/lon coordinates of the fire ignition points.  Latitude and longitude were also reverse geocoded from the addresses of the AQI sensors to use for customized clustering, and because many rural wildfires originated in locations that could not be mapped to a specific county (wildlands).  
+The NIFC data source was analyzed independently for broader scale trends.  These data were converted from PDFs to dataframes in python via Tabula ([code](https://github.com/rileydr/AirQuality-USWest/blob/main/code/hm_notebooks/4_annual_pdfs_to_csv.ipynb)).
 
 
-### Feature Engineering
+### [Feature Engineering](https://github.com/rileydr/AirQuality-USWest/blob/main/code/hm_notebooks/5_modeling_feature_eng.ipynb)
 * AQI: the air pollutants tracked here (SO2, NO2, CO, O3) are all associated with wildfire emissions.  This means that they were all collinear, so no one feature would provide novel information from the others.  Also, the vast majority of these entries were very low scores - each pollutant individually consistently ranked 'good' in the standard Air Quality Index.  To circumvent collinearity conflicts, we created a single score for the pollutants as a group.  We assigned a numeric scale to the daily good->hazardous labels for each pollutant and multiplied those numbers to get 'overall_aqi'.
 
 * Geographic clustering: the county names proved too granular, and States too broad.  Furthermore, fires and air don't give a hoot about State and county lines. To create more useful groupings, we performed KMeans clustering on all of the datapoints (sensors, smoke imagery, fire locs) mapped to their given or reverse geocoded lat/lon.  After trial and error, we settled on 32 clusters to appropriately encompass our datapoints.
@@ -91,7 +92,7 @@ Despite aspirations to utilize machine learning, time series, and other techniqu
 
 Despite 'almost-daily' records for smoke and air quality, and despite generalizing their locations to the county level, there were many observations in the merged data where wildfire entries only contained data from one metric or the other.  Dropping either metric (air quality/smoke) would have eliminated about half of the wildfire events in the data, which were already a significant minority.  Initially, as much data were retained as possible, but as modeling attempts progressed, more partial-null observations were dropped.
 
-Modeling overall was crippled by the inexplicable _lack_ of fluctuations in aqi.  While some signals could be seen in nearby sensors during known large fire events, the vast majority of aqi data were constant baseline scores.  Based on interactive Tableau mapping, it was clear that smoke scores, on the other hand, did fluctuate over time and with fires.  This meant that the smoke data and the aqi data were essentially in conflict with each other and there were no definitive correlations in the data.
+Modeling overall was crippled by the unexpected _lack_ of fluctuations in aqi.  While some signals could be seen in nearby sensors during known large fire events, the vast majority of aqi data were constant baseline scores.  Based on interactive Tableau mapping, it was clear that smoke scores, on the other hand, did fluctuate over time and with fires.  The smoke data and the aqi data were some times in conflict with each other and there were no definitive correlations in the data.
 
 The dummy model on the aggregated data yielded a 0 training r2 score, and a negative test r2 score.  To see if there were regional patterns that were muted when part of the whole, linreg was performed on all 32 clusters.  These models attempted to predict overall_aqi (y) based on (X) fire presence, fire acreage, type of fire (rx or wild), and smoke score.  Smoke score and overall_aqi were squared to add more weight to scores that increased from baseline.
 
