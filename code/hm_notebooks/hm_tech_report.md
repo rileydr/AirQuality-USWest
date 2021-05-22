@@ -1,6 +1,3 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 5: Group Project
-
-
 ### Problem Statement
 
 The goal of this project was to determine if the relationship between wildfire events and air quality can be quantified.  Does the type of fire - namely prescribed (rx) burns vs wildfire - or the size of fire have an interpretable impact on air quality?  Answering these questions could be used to inform wildfire management.  Fires are a fact: they will occur, and they will cause emissions and air pollution when they do.  If there is a defined relationship between air pollutants, fire acreage, and/or type of fire management agencies could use this information to determine a burn regimen to optimize air quality and minimize the impact of these events on human health.  Ie if we could confirm that 1,000 fires under 300 acres have significantly less impact than a single fire of 5,000 acres, that would encourage a high-frequency-low-acreage prescribed burn regimen.
