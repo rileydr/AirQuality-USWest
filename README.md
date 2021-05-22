@@ -116,7 +116,7 @@ We have sought to understand some the following:
 
 * Is there a cyclical relationship we can identify between smoke, fire and air quality? And if so, can we identify and interpret any seasonal patterns?
 
-<!---_Insert Helen's state by state charts from slide deck_--->
+![](./assets/yearly_acres_fig1.png)
  
 
 <!---<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>--->
