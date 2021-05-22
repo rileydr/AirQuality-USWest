@@ -1,2 +1,0 @@
-/data/pollution/pollution_us_2000_2016.csv filter=lfs diff=lfs merge=lfs -text
-/data/fire/smoke_west_counties_2010_2016.csv filter=lfs diff=lfs merge=lfs -text
