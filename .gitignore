@@ -2,7 +2,6 @@
 
 # local repo file storage
 git_ignore/
-
 data/
 
 # hm scratch folders
