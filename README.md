@@ -219,7 +219,7 @@ Many factors influence air quality (_[source](https://docs.google.com/document/d
 
 
 </br></br>
-## Links to Work
+## Links
 
 **Python Notebooks**
 
