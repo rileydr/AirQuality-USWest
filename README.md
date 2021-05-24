@@ -249,7 +249,7 @@ Despite failure to identify relationships useful for management, hopefully the a
 
 **Tableau Vizualizations**
 
-* [`Tableau Workbook (interactive) on Tableau Public`](https://drive.google.com/file/d/1ZpZ5qNFaVL2aCOguS21lIJamtArmaXsl/view?usp=sharing)
+* [`Tableau Workbook (interactive) on Tableau Public`](https://public.tableau.com/profile/riley.robertson#!/vizhome/wildfires_v2/FIRESANDSMOKEOverTime)
 <!---
 <div style='float: center; padding=50px'>
 <img src='https://github.com/rileydr/AirQuality-USWest/blob/main/assets/repository_banner_dark.png'>
