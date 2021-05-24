@@ -39,7 +39,7 @@ The goal of this project was to quantify the relationship between wildfire event
 <p align=center>
 <img src="./assets/orange_sky_sf.png" width=700 alt="San Francisco covered in smoke from California wildfires" title="San Francisco covered in smoke from California wildfires">
 <br>San Francisco covered in smoke from California wildfires <br>
- September 2020, 8:00 AM
+ September 9, 2020, 8:00 AM
 </p>
 
 
