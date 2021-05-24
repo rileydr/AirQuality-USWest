@@ -243,13 +243,13 @@ Despite failure to identify relationships useful for management, hopefully the a
 **Presentation Slide Deck**
 
 * [`Slides`](https://docs.google.com/presentation/d/10I3ZuSoi1APt5GTSe4lJPC51fLsKmMWfKAVmRrd-5NY/edit#slide=id.p)
-* [`Recording`]()
+* [`Recording`](https://generalassembly.zoom.us/rec/play/SGsd_eMT-qoCA8DJkRtAYWq1zCWkLxmsnPVXoFPO-uoEY1w5dZ6BlSJriergIUh8ETQ-sCj6EaJJplS3.AcyeJu9hITLmNpWa?startTime=1621614861000&_x_zm_rtaid=CNQjtESJQz2QMBME5ea6bw.1621875342059.9abbd8e7e25ef11132c377584c7dbe14&_x_zm_rhtaid=269)
 
 </br>
 
 **Tableau Vizualizations**
 
-* [`Tableau Workbook (interactive) on Tableau Public`](https://public.tableau.com/profile/riley.robertson#!/vizhome/wildfires_v2/FIRESANDSMOKEOverTime)
+* [`Tableau Workbook (interactive) on Tableau Public`](https://drive.google.com/file/d/1ZpZ5qNFaVL2aCOguS21lIJamtArmaXsl/view?usp=sharing)
 <!---
 <div style='float: center; padding=50px'>
 <img src='https://github.com/rileydr/AirQuality-USWest/blob/main/assets/repository_banner_dark.png'>
